@@ -5,7 +5,7 @@ const button2 = document.getElementById('option2');
 const video = document.getElementById('main-video');
 
 let videoStart = "assets/videos/video1.mp4"
-let videoFase1 = [ "assets/videos/video2.mp4", "assets/videos/video3.mp4", "assets/videos/video4.mp4", "assets/videos/video7.mp4", "assets/videos/video8.mp4"];
+let videoFase1 = [ "assets/videos/video2.mp4", "assets/videos/video3.mp4", "assets/videos/video4A.mp4", "assets/videos/video7.mp4", "assets/videos/video8.mp4"];
 let videoFase2 = [ "assets/videos/video4.mp4", "assets/videos/video5.mp4", "assets/videos/video6.mp4"]
 
 mainVideo.innerHTML = `<source src="${videoStart}" type="video/mp4"></source>`
@@ -72,6 +72,11 @@ function selectOption2(source) {
             interactionButtons.innerHTML = `
     <button id="option1" onclick="selectOption1('${videoFase2[1]}')">Opção 1</button>
     <button id="option2" onclick="selectOption2('${videoFase2[2]}')">Opção 2</button>`;
+        break;
+        case videoFase1[2]:
+            interactionButtons.innerHTML = `
+    <button id="option1" onclick="selectOption1('${videoFase1[3]}')">Opção 1</button>
+    <button id="option2" onclick="selectOption2('${videoFase1[4]}')">Opção 2</button>`;
         break;
         default:
         buttons.forEach(button => button.disabled = true);
