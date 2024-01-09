@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+}
+
+#video-container {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+ }
+
+#main-video {
+  width: 320px;
+}
+
+#interaction-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+#interaction-buttons button {
+  margin: 0 10px;
+  padding: 10px;
+
+}
